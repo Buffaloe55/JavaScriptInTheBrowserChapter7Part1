@@ -1,4 +1,8 @@
-const gameDate = document.getElementById("gameDate").value;
+function myLineUp(event) {
+    event.preventDefault();
+
+    const status = document.querySelector('input[name="status"]:checked').value;
+    const gameDate = document.getElementById("gameDate").value;
     const selectedPlayers = document.querySelectorAll('input[name="players"]:checked');
 
     let players = [];
